@@ -13,7 +13,8 @@ def get_uid():
         users = get_users()
         for u in users:
             # change this to a list as there will be more than one user
-            return pwd.getpwnam(u).pw_uid
+            uid_list = [] 
+            return uid_list.append(pwd.getpwnam(u).pw_uid)
     except KeyError:
             return None
  # navigate to the users homedir read a file and capture it's contents to compare to the iterator `u`
